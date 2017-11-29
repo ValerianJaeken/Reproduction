@@ -1,1 +1,49 @@
+div{
+  outline: red solid 3px;
+}
 
+footer{
+  background-color:#5695F5;
+  margin:0;
+  padding:0;
+}
+.footer{
+  color:white;
+}
+.download{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-left:80px;
+  padding-right:80px;
+  background-color:#5695F5;
+  height:200px;
+  color:white;
+}
+
+.download a{
+  text-align:center;
+  line-height:50px;
+  border: solid white 5px;
+  border-radius:25px;
+  width:150px;
+  height:50px;
+  text-decoration: none;
+  }
+
+.copyright{
+  background-color:rgba(0, 0, 0, 0.2);
+  height:80px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  }
+
+
+.top{
+  text-align:center;
+  }
+.features{
+  display:flex;
+  justify-content:space-around;
+}

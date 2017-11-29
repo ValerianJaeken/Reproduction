@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="onepage-images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="onepage-images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="onepage-images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="onepage-images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="onepage-images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="onepage-images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="onepage-images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="onepage-images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="onepage-images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="onepage-images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="onepage-images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="onepage-images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="onepage-images/favicon-16x16.png">
+    <link rel="manifest" href="onepage-images/manifest.json">
+    <meta name="msapplication-TileColor" content="green">
+    <meta name="msapplication-TileImage" content="onepage-images/ms-icon-144x144.png">
+    <meta name="theme-color" content="yellow">
+    <title>Sloth</title>
+  </head>
+  <body>
+    <!--This will be the menu on the top, I guess a header will be the right way to go, after the container div-->
+      <!-- I will try to use a div for the left side of the header to align them on the left side easily -->
+    <div class="container">
+      <header>
+        <h4>ONEPAGER</h4>
+        <!-- This will be the div to align elemnts to the left, separate from the "PAGER" -->
+        <div class="headerleft">
+          <p>Overview</p>
+          <p>Highlights</p>
+          <p>Features</p>
+          <p>Download</p>
+        </div>
+      </header>
+    <!--This will be the first section below the header, from now on I'll only use sections and assign a class to them -->
+      <section>
+        <h5>ONEPAGER</h5>
+        <p>A simple One Page Modular Theme for Grav</p>
+      </section>
+    <!--Second big section of the page, a justify position should do the trick ?-->
+      <section>
+        <h2>Built on top of Greatness</h2>
+        <h5>Four core tenants keep Grav focused</h5>
+        <!--I will make a div to move those 4 elements in a square position, then a div for each element to make sure they have their proper icon-->
+        <div class="square">
+          <div class="box">
+            <img src="" alt="">
+            <h4><strong>Crazy Fast</strong></h4>
+            <p>Performance is not just an afterthought, we baked it in from the start!</p>
+          </div>
+          <div class="box">
+            <img src="" alt="">
+            <h4><strong>Easy to Build</strong></h4>
+            <p>Simple text files means Grav is trivial to install, and easy to maintain.</p>
+          </div>
+          <div class="box">
+            <img src="" alt="">
+            <h4><strong>Super Flexible</strong></h4>
+            <p>From the ground up, with many plugin hooks, Grav is extremely extensible.</p>
+          </div>
+          <div class="box">
+            <img src="" alt="">
+            <h4><strong>Awesome Technology</strong></h4
+              <p>Grav employs best-in-class technologies such as Twig, Markdown & Yaml.</p>
+          </div>
+        </div>
+      </section>
+      <!--I will use 2 boxes inside a container to align the image and the text, looks easy -->
+      <section>
+        <div class=align>
+          <div class="text">
+            <h2><strong>Fast, Extensible, Open Source!</strong></h2>
+            <h4>Grav is a modern open source flat-file CMS</h4>
+            <p>
+              Grav is a modern open source flat-file CMS. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               Suspendisse suscipit ultrices ligula eget accumsan. Sed egestas augue a risus semper pretium non sit amet odio.
+            </p>
+          </div>
+          <div class="image">
+            <i class="fa fa-grav fa-5x" aria-hidden="true"></i>
+          </div>
+        </div>
+      </section>
+      <!--For this section I will make 12 divs in a container and order them, I don't feel like this is the best way to proceed-->
+      <div class="top">
+        <h2><strong>Stuffed full of Amazing Features</strong></h2>
+        <h4>This is a non-inclusive smattering of them</h4>
+      </div>
+      <div class="features">
+        <div class="conf">
+          <i class="fa fa-text-height fa-3x" aria-hidden="true"></i>
+            <br/>
+          <strong>Markdown Syntax</strong>
+        </div>
+        <div class="conf">
+          <i class="fa fa-cloud-upload fa-3x" aria-hidden="true"></i>
+          <br/>
+          <strong>Simple Install</strong>
+        </div>
+        <div class="conf">
+          <i class="fa fa-file fa-3x" aria-hidden="true"></i>
+          <br/>
+          <strong>Documentation</strong>
+        </div>
+        <div class="conf">
+          <i class="fa fa-expand fa-3x" aria-hidden="true"></i>
+          <br/>
+          <strong>Twig Templating</strong>
+        </div>
+        <div class="conf">
+          <i class="fa fa-cogs fa-3x" aria-hidden="true"></i>
+          <br/>
+          <strong>Powerful Plugins</strong>
+        </div>
+        <div class="conf">
+          <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+          <br/>
+          <strong>Github</strong>
+        </div>
+        <div class="conf">
+          <i class="fa fa-rocket fa-3x" aria-hidden="true"></i>
+          <br/>
+          <strong>Smart Caching</strong>
+        </div>
+        <div class="conf">
+          <i class="fa fa-thermometer-empty fa-3x" aria-hidden="true"></i>
+          <br/>
+          <strong>Intuitive UI</strong>
+        </div>
+        <div class="conf">
+          <i class="fa fa-scribd fa-3x" aria-hidden="true"></i>
+          <br/>
+          <strong>Responsive Design</strong>
+        </div>
+        <div class="conf">
+          <i class="fa fa-ticket fa-3x" aria-hidden="true"></i>
+          <br/>
+          <strong>Flexible Taxonomies</strong>
+        </div>
+        <div class="conf">
+          <i class="fa fa-file-text-o fa-3x" aria-hidden="true"></i>
+          <br/>
+          <strong>File-Based</strong>
+        </div>
+        <div class="conf">
+          <i class="fa fa-heart fa-3x" aria-hidden="true"></i>
+          <br/>
+          <strong>Awesomazing</strong>
+        </div>
+      </div>
 
+      <!--This will be the copyright and the end of the page, footer seems fitting here-->
+      <!--After thinking, I'll use a huge footer with the download link with a small div for the copyright-->
+      <section class="download">
+          <h2>
+            GET GRAV
+          </h2>
+          <a href="https://i.imgur.com/PdNdj8o.jpg">
+            Download
+          </a>
+      </section>
+      <footer>
+      <div class="footer">
+        <div class="copyright">
+          <span class="cancer">©2016 One Pager Grav Theme</span>
+        </div>
+      </div>
+      </footer>
+    </div>
+  </body>
+</html>
