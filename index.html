@@ -28,10 +28,11 @@
     <!--This will be the menu on the top, I guess a header will be the right way to go, after the container div-->
       <!-- I will try to use a div for the left side of the header to align them on the left side easily -->
     <div class="container">
+      <div class="background">
       <header>
-        <h4>ONEPAGER</h4>
+        <h4><strong>ONEPAGER</strong></h4>
         <!-- This will be the div to align elemnts to the left, separate from the "PAGER" -->
-        <div class="headerleft">
+        <div class="head">
           <p>Overview</p>
           <p>Highlights</p>
           <p>Features</p>
@@ -39,35 +40,43 @@
         </div>
       </header>
     <!--This will be the first section below the header, from now on I'll only use sections and assign a class to them -->
-      <section>
+      <section class="seksheune">
         <h5>ONEPAGER</h5>
         <p>A simple One Page Modular Theme for Grav</p>
       </section>
+    </div>
     <!--Second big section of the page, a justify position should do the trick ?-->
       <section>
+        <div class="bs">
         <h2>Built on top of Greatness</h2>
-        <h5>Four core tenants keep Grav focused</h5>
+        <p>Four core tenants keep Grav focused</p>
+      </div>
         <!--I will make a div to move those 4 elements in a square position, then a div for each element to make sure they have their proper icon-->
+
         <div class="square">
-          <div class="box">
-            <img src="" alt="">
-            <h4><strong>Crazy Fast</strong></h4>
-            <p>Performance is not just an afterthought, we baked it in from the start!</p>
+          <div class="raw">
+            <div class="box">
+              <i class="fa fa-fighter-jet fa-4x" aria-hidden="true"></i>
+              <h4><strong>Crazy Fast</strong></h4>
+              <p>Performance is not just an afterthought, we baked it in from the start!</p>
+            </div>
+            <div class="box">
+              <i class="fa fa-stack-overflow fa-4x" aria-hidden="true"></i>
+              <h4><strong>Easy to Build</strong></h4>
+              <p>Simple text files means Grav is trivial to install, and easy to maintain.</p>
+            </div>
           </div>
-          <div class="box">
-            <img src="" alt="">
-            <h4><strong>Easy to Build</strong></h4>
-            <p>Simple text files means Grav is trivial to install, and easy to maintain.</p>
-          </div>
-          <div class="box">
-            <img src="" alt="">
-            <h4><strong>Super Flexible</strong></h4>
-            <p>From the ground up, with many plugin hooks, Grav is extremely extensible.</p>
-          </div>
-          <div class="box">
-            <img src="" alt="">
-            <h4><strong>Awesome Technology</strong></h4
+          <div class="raw">
+            <div class="box">
+              <i class="fa fa-cubes fa-4x" aria-hidden="true"></i>
+              <h4><strong>Super Flexible</strong></h4>
+              <p>From the ground up, with many plugin hooks, Grav is extremely extensible.</p>
+            </div>
+            <div class="box">
+              <i class="fa fa-puzzle-piece fa-4x" aria-hidden="true"></i>
+              <h4><strong>Awesome Technology</strong></h4>
               <p>Grav employs best-in-class technologies such as Twig, Markdown & Yaml.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -76,7 +85,7 @@
         <div class=align>
           <div class="text">
             <h2><strong>Fast, Extensible, Open Source!</strong></h2>
-            <h4>Grav is a modern open source flat-file CMS</h4>
+            <h5>Grav is a modern open source flat-file CMS</h5>
             <p>
               Grav is a modern open source flat-file CMS. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                Suspendisse suscipit ultrices ligula eget accumsan. Sed egestas augue a risus semper pretium non sit amet odio.
@@ -90,68 +99,74 @@
       <!--For this section I will make 12 divs in a container and order them, I don't feel like this is the best way to proceed-->
       <div class="top">
         <h2><strong>Stuffed full of Amazing Features</strong></h2>
-        <h4>This is a non-inclusive smattering of them</h4>
+        <p>This is a non-inclusive smattering of them</p>
       </div>
       <div class="features">
-        <div class="conf">
-          <i class="fa fa-text-height fa-3x" aria-hidden="true"></i>
+        <div class="column">
+          <div class="conf">
+            <i class="fa fa-text-height fa-3x" aria-hidden="true"></i>
+              <br/>
+            <strong>Markdown Syntax</strong>
+          </div>
+          <div class="conf">
+            <i class="fa fa-cloud-upload fa-3x" aria-hidden="true"></i>
             <br/>
-          <strong>Markdown Syntax</strong>
+            <strong>Simple Install</strong>
+          </div>
+          <div class="conf">
+            <i class="fa fa-file fa-3x" aria-hidden="true"></i>
+            <br/>
+            <strong>Documentation</strong>
+          </div>
+          <div class="conf">
+            <i class="fa fa-expand fa-3x" aria-hidden="true"></i>
+            <br/>
+            <strong>Twig Templating</strong>
+          </div>
         </div>
-        <div class="conf">
-          <i class="fa fa-cloud-upload fa-3x" aria-hidden="true"></i>
-          <br/>
-          <strong>Simple Install</strong>
+        <div class="column">
+          <div class="conf">
+            <i class="fa fa-cogs fa-3x" aria-hidden="true"></i>
+            <br/>
+            <strong>Powerful Plugins</strong>
+          </div>
+          <div class="conf">
+            <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+            <br/>
+            <strong>Github</strong>
+          </div>
+          <div class="conf">
+            <i class="fa fa-rocket fa-3x" aria-hidden="true"></i>
+            <br/>
+            <strong>Smart Caching</strong>
+          </div>
+          <div class="conf">
+            <i class="fa fa-thermometer-empty fa-3x" aria-hidden="true"></i>
+            <br/>
+            <strong>Intuitive UI</strong>
+          </div>
         </div>
-        <div class="conf">
-          <i class="fa fa-file fa-3x" aria-hidden="true"></i>
-          <br/>
-          <strong>Documentation</strong>
-        </div>
-        <div class="conf">
-          <i class="fa fa-expand fa-3x" aria-hidden="true"></i>
-          <br/>
-          <strong>Twig Templating</strong>
-        </div>
-        <div class="conf">
-          <i class="fa fa-cogs fa-3x" aria-hidden="true"></i>
-          <br/>
-          <strong>Powerful Plugins</strong>
-        </div>
-        <div class="conf">
-          <i class="fa fa-github fa-3x" aria-hidden="true"></i>
-          <br/>
-          <strong>Github</strong>
-        </div>
-        <div class="conf">
-          <i class="fa fa-rocket fa-3x" aria-hidden="true"></i>
-          <br/>
-          <strong>Smart Caching</strong>
-        </div>
-        <div class="conf">
-          <i class="fa fa-thermometer-empty fa-3x" aria-hidden="true"></i>
-          <br/>
-          <strong>Intuitive UI</strong>
-        </div>
-        <div class="conf">
-          <i class="fa fa-scribd fa-3x" aria-hidden="true"></i>
-          <br/>
-          <strong>Responsive Design</strong>
-        </div>
-        <div class="conf">
-          <i class="fa fa-ticket fa-3x" aria-hidden="true"></i>
-          <br/>
-          <strong>Flexible Taxonomies</strong>
-        </div>
-        <div class="conf">
-          <i class="fa fa-file-text-o fa-3x" aria-hidden="true"></i>
-          <br/>
-          <strong>File-Based</strong>
-        </div>
-        <div class="conf">
-          <i class="fa fa-heart fa-3x" aria-hidden="true"></i>
-          <br/>
-          <strong>Awesomazing</strong>
+        <div class="column">
+          <div class="conf">
+            <i class="fa fa-scribd fa-3x" aria-hidden="true"></i>
+            <br/>
+            <strong>Responsive Design</strong>
+          </div>
+             <div class="conf">
+               <i class="fa fa-ticket fa-3x" aria-hidden="true"></i>
+               <br/>
+               <strong>Flexible Taxonomies</strong>
+             </div>
+             <div class="conf">
+               <i class="fa fa-file-text-o fa-3x" aria-hidden="true"></i>
+               <br/>
+               <strong>File-Based</strong>
+             </div>
+          <div class="conf">
+            <i class="fa fa-heart fa-3x" aria-hidden="true"></i>
+            <br/>
+            <strong>Awesomazing</strong>
+          </div>
         </div>
       </div>
 
@@ -168,7 +183,7 @@
       <footer>
       <div class="footer">
         <div class="copyright">
-          <span class="cancer">©2016 One Pager Grav Theme</span>
+          <span>©2016 One Pager Grav Theme</span>
         </div>
       </div>
       </footer>

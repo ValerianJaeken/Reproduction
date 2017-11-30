@@ -1,5 +1,6 @@
-div{
-  outline: red solid 3px;
+body{
+  margin:0;
+  padding:0;
 }
 
 footer{
@@ -39,11 +40,99 @@ footer{
   align-items:center;
   }
 
-
 .top{
   text-align:center;
+  font-size: 20px;
+  font-family: sans-serif;
   }
 .features{
   display:flex;
+  flex-direction: column;
+  margin-bottom:100px;
+
+}
+.conf i{
+  color:#5695F5;
+  display:flex;
+  justify-content: center;
+}
+.column{
+  display:flex;
+  flex-direction: row;
   justify-content:space-around;
+  margin-top:85px;
+}
+.align{
+  display:flex;
+  justify-content: space-around;
+  background-color:lightgray;
+  height:300px;
+}
+.text{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  text-align:center;
+  width:480px;
+}
+
+.text h2{
+  margin:0;
+}
+.image{
+  font-size:40px;
+  margin-top:40px;
+}
+.box i{
+  color:#5695F5;
+}
+.box{
+  width:50%;
+  text-align: center;
+}
+.box p{
+  margin:auto;
+  width:250px;
+  text-align: center;
+}
+.raw{
+  display:flex;
+  flex-direction: row;
+}
+.bs{
+  text-align:center;
+}
+header{
+  color: white;
+  display:flex;
+  justify-content: space-between;
+  border-bottom:1px solid lightblue;
+}
+header h4{
+  margin-left:80px;
+  font-size:19px;
+}
+.head{
+  display:flex;
+  justify-content:flex-end;
+  margin-right:80px;
+  margin-top:10px;
+}
+.head p{
+  display:flex;
+  margin-right:30px;
+}
+.seksheune{
+  color:white;
+  margin-left:80px;
+}
+.seksheune h5{
+  font-size:50px;
+}
+.seksheune p{
+  font-size:30px;
+}
+.background{
+  background-color:#5695F5;
+  height:400px;
 }
